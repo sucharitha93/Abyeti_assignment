@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.abyeti.productapp.Buyer" table="buyer">
+        <id column="bid" name="bid" type="string" />
+        <property column="bname" name="bname" type="string" />
+        <property column="buname" name="buname" type="string" />
+        <property column="bpword" name="bpword" type="string" />
+        <property column="baddress" name="baddress" type="string" />
+    </class>
+</hibernate-mapping>

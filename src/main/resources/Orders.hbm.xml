@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.abyeti.productapp.Orders" table="orders">
+        <id column="oid" name="Oid" type="string" />
+        <property column="pid" name="Pid" type="string" />
+        <property column="pname" name="Pname" type="string" />
+        <property column="category" name="Category" type="string" />
+        <property column="sellerid" name="Sellerid" type="string" />
+        <property column="buyerid" name="Buyerid" type="string" />
+        <property column="buyer" name="Pid" type="string" />
+        <property column="price" name="Price" type="string" />
+        <property column="seller" name="Seller" type="string" />
+    </class>
+</hibernate-mapping>

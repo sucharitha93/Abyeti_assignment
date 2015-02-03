@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Browse</title>
+</head>
+<body>
+<h1>The Collection of products is:</h1>
+<div ng-controller="browseController">
+<table>
+    <thead>
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th>Product Category</th>
+    <th>Product Description</th>
+    <th>Product Price</th>
+    <th>Product Seller</th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="product in products" >
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.category }}</td>
+        <td>{{ product.description}}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.seller }}</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<button ng-click="browse()">Get Data</button>
+
+</body>
+</html>

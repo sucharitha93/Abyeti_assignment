@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Product</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular-animate.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular-route.js"></script>
+</head>
+<body ng-app="productapp" ng-controller="addproductController">
+<script src="app.js"></script>
+<h1>Add a Product to the Collection</h1>
+<form ng-submit="addproduct()">
+Product ID    :<p><input type="text"  ng-model="id"/><p>
+Product Name  :<p><input type="text"  ng-model="name"/><p>
+Product Category:<p><input type="text"  ng-model="category"/><p>
+Description:<p><input type="text"  ng-model="description"/><p>
+Price  :<p><input type="text"  ng-model="price"/><p>
+Seller     :<p><input type="text"  ng-model="seller"/><p>
+    <p><input type="submit" value="Add product">
+</form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.abyeti.productapp.Seller" table="seller">
+        <id column="sid" name="sid" type="string" />
+        <property column="sname" name="sname" type="string" />
+        <property column="suname" name="suname" type="string" />
+        <property column="spword" name="spword" type="string" />
+        <property column="saddress" name="saddress" type="string" />
+    </class>
+</hibernate-mapping>
