@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Seller Login Page</title>
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src="angular/angular-animate.js"></script>
+    <script type="text/javascript" src="angular/angular-route.js"></script>
+    <script type="text/javascript" src="angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="lib/sweet-alert.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="lib/sweet-alert.css"/>
+</head>
+<body ng-controller="sellerloginController">
+<div  align="center">
+    <h1>Seller Login</h1>
+    <form ng-submit="sellerlogin()">
+
+        Username:<p><input type="text"  ng-model="username"  required/><p>
+        Password:<p><input type="password"  ng-model="password" required/><p>
+        <input type="submit" value="Login">
+    </form>
+    <div>
+        Not registered yet?<br>
+        <form action="sregister.html">
+            Sellers click here to register:
+            <input type="submit" value="Seller">
+        </form>
+    </div>
+</div>
+</body>
+</html>

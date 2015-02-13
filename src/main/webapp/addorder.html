@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Add order</title>
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src="angular/angular-animate.js"></script>
+    <script type="text/javascript" src="angular/angular-route.js"></script>
+    <script type="text/javascript" src="angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="lib/sweet-alert.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="lib/sweet-alert.css"/></head>
+<body ng-app="productapp" ng-controller="orderController">
+<h1>Enter the order details</h1>
+
+<form ng-submit="addorder()">
+    Product ID  :<p><input type="number"  ng-model="pid"/><p>
+    Customer ID  :{{userID}}<p>
+    <p><input type="submit" value="Order">
+</form>
+</body>
+</html>

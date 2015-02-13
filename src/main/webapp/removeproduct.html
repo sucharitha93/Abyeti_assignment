@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Remove Product</title>
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src="angular/angular-animate.js"></script>
+    <script type="text/javascript" src="angular/angular-route.js"></script>
+    <script type="text/javascript" src="angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="lib/sweet-alert.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="lib/sweet-alert.css"/>
+</head>
+<body ng-app="productapp">
+<div ng-controller="removeController">
+<form ng-submit="removeproduct()">
+Enter the ID of the product to be removed:<br>
+<input type="number" ng-model="pid">
+<input type="submit" value="Remove">
+</form>
+</div>
+</body>
+</html>

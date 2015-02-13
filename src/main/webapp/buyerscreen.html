@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Customer Page</title>
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src="angular/angular-animate.js"></script>
+    <script type="text/javascript" src="angular/angular-route.js"></script>
+    <script type="text/javascript" src="angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="lib/sweet-alert.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="lib/sweet-alert.css"/>
+
+</head>
+<body ng-app="productapp" ng-controller="buyerscreenController">
+<div align="center">
+    <h1>Welcome Buyer {{ username }}</h1>
+    <h3><a href="#browse">Browse</a></h3>
+    <h3><a href="#order">Order</a></h3>
+    <h3><a href="#vieworders">View Orders</a></h3>
+    <form ng-submit="logout()">
+        <input type="submit" value="Logout"/>
+    </form>
+    <div ng-view=""></div>
+</div>
+
+</body>
+</html>

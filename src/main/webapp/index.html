@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>product App</title>
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src="angular/angular-animate.js"></script>
+    <script type="text/javascript" src="angular/angular-route.js"></script>
+    <script type="text/javascript" src="angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="lib/sweet-alert.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="lib/sweet-alert.css"/>
+</head>
+<body ng-app="productapp">
+<div align="center">
+<h1>
+Welcome to Product App</h1>
+<h3><a href="#customer">Customer Login</a></h3>
+<h3><a href="#seller">Seller Login</a></h3>
+
+    <div ng-view=""></div>
+</div>
+</body>
+</html>

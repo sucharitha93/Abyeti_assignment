@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Add User</title>
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src="angular/angular-animate.js"></script>
+    <script type="text/javascript" src="angular/angular-route.js"></script>
+    <script type="text/javascript" src="angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="lib/sweet-alert.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="lib/sweet-alert.css"/></head>
+<body ng-app="productapp" ng-controller="registerbuyerController">
+<h1>Register Buyer</h1>
+<form ng-submit="bregister()" >
+    Name  :<p><input type="text"  ng-model="name" required/><p>
+    Username:<p><input type="text"  ng-model="username" required/><p>
+    Password:<p><input type="password"  ng-model="password" required/><p>
+    Address  :<p>
+    <textarea ng-model="address"></textarea>
+    <p><input type="submit" value="Register">
+</form>
+<form action="index.html">
+    <input type="submit" value="Return to login"/>
+</form>
+</body>
+</html>

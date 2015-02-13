@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Product</title>
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src="angular/angular-animate.js"></script>
+    <script type="text/javascript" src="angular/angular-route.js"></script>
+    <script type="text/javascript" src="lib/sweet-alert.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="lib/sweet-alert.css"/>
+</head>
+<body ng-app="productapp" ng-controller="addproductController">
+<h1>Add a Product to the Collection</h1>
+<form ng-submit="addproduct()">
+Product Name  :<p><input type="text"  ng-model="name"/><p>
+Product Category:<p><input type="text"  ng-model="category"/><p>
+Description:<p><input type="text"  ng-model="description"/><p>
+Price  :<p><input type="number"  ng-model="price"/><p>
+    <p><input type="submit" value="Add product">
+</form>
+</body>
+</html>
